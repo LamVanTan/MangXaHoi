@@ -13,7 +13,7 @@
 			        </li>
 
 			        <li class="nav-item" style="position: relative;left:140px; bottom: 3px;">
-						<a class="nav-link" href="{{Route('trangchu')}}" title="Trang Chủ">
+						<a class="nav-link" href="Home/TrangChu/content" title="Trang Chủ">
 							<div style="font-size: 20px;color: black;"><i class="fas fa-home"></i></div>
 						</a>
 					</li>
@@ -44,7 +44,7 @@
 			<nav class="navbar navbar-expand-sm ">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="{{Route('canhan')}}" title="Trang Cá Nhân">
+						<a class="nav-link" href="Home/TrangCaNhan/content" title="Trang Cá Nhân">
 							<img class="rounded-circle" src="img/tan.jpg" width="25px" height="25px" style="position: relative; top:3px;left:4px;">
 						</a>
 					</li>
@@ -59,7 +59,7 @@
 
 			      <!-- phần tin nhắn -->
 				  <li class="nav-item ">
-				        <a class="nav-link" href="{{Route('mes')}}" title="Tin Nhắn"><div style="font-size: 20px;color: black;"><i class="fas fa-sms"></i></div>
+				        <a class="nav-link" href="Home/TinNhan/content" title="Tin Nhắn"><div style="font-size: 20px;color: black;"><i class="fas fa-sms"></i></div>
 				        </a>
 				       
 			      </li>

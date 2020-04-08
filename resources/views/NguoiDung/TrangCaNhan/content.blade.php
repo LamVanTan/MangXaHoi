@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('NguoiDung.layout.master')
 
 @section('noidung')
 
@@ -7,22 +7,22 @@
       <div class="col-8 col-sm-8">
             <div class="row">
                 <div class="col-12 col-sm-12">
-                      @include('pages.trangcanhan.header')
+                      @include('NguoiDung.TrangCaNhan.header')
                 </div>
             </div>
 
             <div class="row">
               <div class="col-12 col-sm-12">
                 @if(isset($kq))
-                        @if($kq=="anhcanhan")
-                          @include('pages.Trangcanhan.contentimg')
+                        @if($kq=="Home/TrangCaNhan/img")
+                          @include('NguoiDung.TrangCaNhan.contentimg')
           
-                        @elseif($kq="gioithieu")
-                             @include('pages.Trangcanhan.contentlylich')
+                        @elseif($kq="Home/TrangCaNhan/thongtin")
+                             @include('NguoiDung.TrangCaNhan.contentlylich')
                         @endif
 
                       @else
-                        @include('pages.Trangcanhan.main')
+                        @include('NguoiDung.TrangCaNhan.main')
                 @endif
               </div>
             </div>

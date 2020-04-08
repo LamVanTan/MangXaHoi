@@ -1,5 +1,5 @@
 
-@extends('layout.master')
+@extends('NguoiDung.layout.master')
 
 @section('noidung')
 
@@ -7,10 +7,10 @@
   		    
 </div>
 <div class="col-5 col-sm-5">
-    @include('pages.trangchu.main')
+    @include('NguoiDung.TrangChu.main')
 </div>
 <div class="col-3 col-sm-3" >
-   @include('pages.trangchu.listbanbe')
+   @include('NguoiDung.TrangChu.listbanbe')
 </div>
 <div class="col-2 col-sm-2">
    

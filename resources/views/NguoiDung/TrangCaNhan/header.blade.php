@@ -35,16 +35,16 @@
                 <div class="col-12 col-sm-12 " style="padding-left:27%;margin-top: -60px;">
                     <ul class="nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="{{Route('canhan')}}" id="background"><b>Bài Viết</b></a>
+                        <a class="nav-link" href="Home/TrangCaNhan/content" id="background"><b>Bài Viết</b></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="{{Route('lylich')}}" id="background"><b>Thông Tin</b></a>
+                        <a class="nav-link" href="Home/TrangCaNhan/thongtin" id="background"><b>Thông Tin</b></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="index.php?xem=canhan&click=banbe" id="background"><b>Bạn Bè</b></a>
+                        <a class="nav-link" href="" id="background"><b>Bạn Bè</b></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " href="{{Route('imgcanhan')}}" id="background"><b>Hình Ảnh</b></a>
+                        <a class="nav-link " href="Home/TrangCaNhan/img" id="background"><b>Hình Ảnh</b></a>
                       </li>
                       
                     </ul>
