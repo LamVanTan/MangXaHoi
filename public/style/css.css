@@ -142,7 +142,7 @@ i{
   display: flex;
   vertical-align: baseline;
   background: white;
-  transition:3s ease;
+  transition:1s ease;
 }
 
 #background1:hover{
@@ -160,20 +160,19 @@ i{
   .text{
     margin-left: 12px;
     width: 70%;
-
+    padding-top:10px;
 }
-    h6{
-      margin-top: 6px;
-      margin-bottom: 0;
 
-    }
+h6{
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
 
-    p{
-      margin: 0;
-    }
-  
+p{
+   margin: 0;
+}
 
-  .time{
+.time{
     color: grey;
   }
 

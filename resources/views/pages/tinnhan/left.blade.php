@@ -11,16 +11,12 @@
 		             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						 <i class="fas fa-cog" style="color: black"></i>
 				     </a>
-				     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align: center;">
-				         <a class="dropdown-item" href="#" id="background1">cài đặt</a>
+				     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				         <a class="dropdown-item" href="#" id="background1">Cài đặt</a>
 				             <div class="dropdown-divider"></div>
-				         <a class="dropdown-item" href="#" id="background1">người liên hệ hoạt động</a>
+				         <a class="dropdown-item" href="#" id="background1">Đoạn chat chưa đọc</a>
 				             <div class="dropdown-divider"></div>
-				         <a class="dropdown-item" href="#" id="background1">tin nhắn chờ</a>
-				         <a class="dropdown-item" href="#" id="background1">cuộc trò chuyện bị ẩn</a>
-				         <a class="dropdown-item" href="#" id="background1">đoạn chat chưa đọc</a>
-				             <div class="dropdown-divider"></div>
-				         <a class="dropdown-item" href="#" id="background1">báo cáo sự cáo</a>
+				         <a class="dropdown-item" href="#" id="background1">Báo cáo sự cáo</a>
 				     </div>
 	 	     </span>
 	 </div>
