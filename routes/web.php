@@ -23,7 +23,6 @@ Route::get('/', function () {
   Route::get('dangnhap','controllerLogin@getLogin');
   Route::post('dangnhap','controllerLogin@postLogin');
 
- // Route::post('dangnhap','controllerLogin@postdangki');
  
 
 Route::group(['prefix'=>'Home'],function() {
