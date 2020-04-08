@@ -2,7 +2,7 @@
 
 @section('noidung')
 
-	<div class="col-1 col-sm-1">
+	<div class="col-2 col-sm-2">
       </div>
       <div class="col-8 col-sm-8">
             <div class="row">
@@ -24,11 +24,8 @@
           @endif
       </div>
 
-       <div class="col-1 col-sm-1">
       
-      </div>
-
        <div class="col-2 col-sm-2">
-       @include('pages.trangchu.right')
+      
       </div>
 @endsection

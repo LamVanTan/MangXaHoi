@@ -3,14 +3,14 @@
      <div class="card-header">
       <div class="row">
         <div class="col-12 col-sm-12">
-          <i class="fas fa-pencil-alt" style="color:black  ;"></i><b> Bài viết mới </b>
+          <i class="fas fa-pencil-alt" style=" font-size:17px; color:black  ;"></i><b> Bài Viết Mới </b>
         </div>
       </div>
      </div>
-
+    
      <div class="card-body">
        <button type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#myModal" style="color: #BBBBBB; background-color:white;">
-         <img src="img/em.jpg" class="rounded-circle" width="50px" height="50px;"> Bạn đang nghĩ gì?</button>
+         <img src="img/tan.jpg" class="rounded-circle" width="50px" height="50px;"> Bạn đang nghĩ gì?</button>
            <!-- Modal -->
            <div class="modal fade " id="myModal" role="dialog" data-backdrop="static">
              <div class="modal-dialog" >
@@ -56,7 +56,7 @@
      <div class="row">
        <div class="col-12 col-sm-12">
          
-         <img src="img/em.jpg" class="rounded-circle" style="width:30px; height:30px;"> <b>Lâm Văn Tân </b>
+         <img src="img/tan.jpg" class="rounded-circle" style="width:30px; height:30px;"> <b>Lâm Văn Tân </b>
       
      
            <a class=" float-right" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

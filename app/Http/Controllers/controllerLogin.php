@@ -18,7 +18,7 @@ class controllerLogin extends Controller
 
         $email=$req->email;
         $password=$req->pass;
-
+        
          if (Auth::attempt(array('Username' => $email, 'password' => $password)))
     {
          return view('pages/trangchu/content');

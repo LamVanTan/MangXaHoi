@@ -7,9 +7,9 @@
 	 			 <p class="">hey, hôm nay rảnh k?</p>
 	 		 </div>
              <span class="float-right" >
-                 <i class="fas fa-phone-alt" style="color: #3399CC"></i>
-                 <i class="fas fa-video" style="color: #3399CC"></i>
-				 <i class="fas fa-info" style="color: #3399CC"></i>
+                 <i class="fas fa-phone-alt"></i>
+                 <i class="fas fa-video"></i>
+				 <i class="fas fa-info"></i>
 			 </span>
 	 </div>
  </div>
@@ -98,15 +98,17 @@
 	<div class="row">
 		 <div class="col-12 col-sm-12">
 		 	 <div class="chat-box-tray">
-		 		 <i class="fas fa-grin" style="color: #3399CC"></i>
-		 		 <input type="text" name=""  placeholder="gửi những lời yêu hương đến bạn">
-	             <button type="button" class="btn" >
-	                 <i class="fas fa-microphone" style="color: #3399CC"></i>
-	             </button>
-	             <button type="button" class="btn" >
-	                 <i class="fab fa-telegram-plane" style="color: #3399CC;"></i>
-	             </button>	
-		 							
+		 	 	 
+			 		 <i class="fas fa-grin" style="color: black; margin-right: 10px;"></i>
+			 		 <form style="display:flex; width: 100%">
+			 		 <input type="text" name="" placeholder=" gửi những lời yêu hương đến bạn..." style="outline: none;">
+		             <button type="submit" class="btn" >
+		                 <i class="fas fa-microphone" style="color: black;"></i>
+		             </button>
+		             <button type="submit" class="btn" >
+		                 <i class="fab fa-telegram-plane" style="color: black;"></i>
+		             </button>	
+		 		 </form>				
 		     </div>
 		 </div>
 	 </div> <!-- kết thúc -->

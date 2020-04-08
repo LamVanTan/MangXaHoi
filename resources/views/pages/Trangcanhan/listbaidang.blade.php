@@ -1,128 +1,124 @@
-
+<!-- phần để viết đăng bài -->
 <div class="card" >
-  <div class="card-header">
-  <div class="row">
-      <div class="col-12 col-sm-12">
-        <i class="fas fa-pencil-alt" style="color: #009999  ;"></i><b> bài viết | </b>
-        <i class="fas fa-camera" style="color:#006633;"></i><b> ảnh/video  |  </b>
-        <i class="fas fa-video" style="color: #FF3333;"> </i><b> trực tiếp</b>
+     <div class="card-header">
+      <div class="row">
+        <div class="col-12 col-sm-12">
+          <i class="fas fa-pencil-alt" style="color:black  ;"></i><b> Bài viết mới </b>
+        </div>
       </div>
-    </div>
-  </div>
-  
+     </div>
+    
      <div class="card-body">
-       <button type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#myModal" style="color: #BBBBBB;">
-         <img src="img/em.jpg" class="rounded-circle" width="50px" height="50px;"> Bạn Đang Nghỉ Gì?</button>
+       <button type="button" class="btn btn-light btn-block" data-toggle="modal" data-target="#myModal" style="color: #BBBBBB; background-color:white;">
+         <img src="img/tan.jpg" class="rounded-circle" width="50px" height="50px;"> Bạn đang nghĩ gì?</button>
            <!-- Modal -->
            <div class="modal fade " id="myModal" role="dialog" data-backdrop="static">
              <div class="modal-dialog" >
               <!-- Modal content-->
                <div class="modal-content">
                    <div class="modal-header">
-                       <b class="modal-title">Tạo Viết Mới</b>
+                       <b class="modal-title">Tạo Bài Viết Mới</b>
                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                    </div>
                    <div class="modal-body">
                      <form action="/action_page.php">
-                         <input type="text" name="" placeholder="Bạn Đang Nghỉ Gì?">
+                         <input type="text" name="" placeholder="Cho tôi biết suy nghĩ của bạn?">
                              <div class="row" >
-                                 <div class="col-3 col-sm-3">
-                                    <button type="button" class="btn btn-light btn-sm">
-                                     <i class="fas fa-image" style="color: #66CC00;"></i> ảnh/video</button>
+                                 <div class="col-4 col-sm-4">
+                                    <button type="button" class="btn btn-light btn-sm btn-block">
+                                     <i class="fas fa-image"></i><br>Hình Ảnh</button>
                                  </div>
                                  <div class="col-4 col-sm-4">
-                                     <button type="button" class="btn btn-light btn-sm">
-                                     <i class="fas fa-user-tag" style="color: #FF3333  ;"></i> Gắn Thẻ Bạn Bè</button>
+                                     <button type="button" class="btn btn-light btn-sm btn-block">
+                                     <i class="fas fa-user-tag"></i><br>Gắn Thẻ</button>
                                  </div>
-                                 <div class="col-5 col-sm-5">
-                                     <button type="button" class="btn btn-light  btn-sm">
-                                     <i class="fas fa-grin-alt"style="color: #CC6600;"></i> Cảm Xúc Và Biểu cảm....</button>
+                                 <div class="col-4 col-sm-4">
+                                     <button type="button" class="btn btn-light btn-sm btn-block">
+                                     <i class="fas fa-grin-alt"></i><br>Cảm Xúc</button>
                                  </div>
                              </div>
                      </form>
                    </div>
                    <div class="modal-footer">
-                       <button type="button" class="btn btn-block">Đăng Bài</button>
+                       <button type="button" class="btn btn-dark btn-block bg-dark">Đăng Bài</button>
                    </div>
               </div>
            </div>
-         </div>
-         <!-- ket thúc cua sổ -->
-
-         <hr>
-          <div class="row" >
-               <div class="col-3 col-sm-3">
-                 <button type="button" class="btn btn-light btn-sm">
-                  <i class="fas fa-image" style="color: #66CC00;"></i> ảnh/video</button>
-               </div>
-               <div class="col-4 col-sm-4">
-                 <button type="button" class="btn btn-light btn-sm">
-                  <i class="fas fa-user-tag" style="color: #FF3333  ;"></i> Gắn Thẻ Bạn Bè</button>
-               </div>
-               <div class="col-5 col-sm-5">
-                 <button type="button" class="btn btn-light  btn-sm">
-                  <i class="fas fa-grin-alt"style="color: #CC6600;"></i> Cảm Xúc Và Biểu cảm....</button>
-               </div>
-         </div>
-      </div>
-</div>
-
-
-
-
+         </div><!-- ket thúc cua sổ -->
+      
+          
+    </div> 
+  </div><!-- kết thúc -->
+  
+<!-- phần hiển thị bài dăng -->
 <div class="card" style="margin-top: 10px;">
-
-  <div class="card-body">
-    <div class="row">
-       <div class="col-8 col-sm-8">
-         <img src="img/em.jpg" class="rounded-circle" style="width: 50px; height: 50px;"> Lâm Văn Tân 
-     </div> 
-
-        <div class="col-4 col-sm-4">
-
-          <a class="nav-link float-right" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-ellipsis-h"></i>
+  <div class="card-header">
+     <div class="row">
+       <div class="col-12 col-sm-12">
+         
+         <img src="img/tan.jpg" class="rounded-circle" style="width:30px; height:30px;"> <b>Lâm Văn Tân </b>
+      
+     
+           <a class=" float-right" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-caret-down"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#" id="background1">lưu bài viết</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" id="background1">chỉnh sữa bài</a>
-          <a class="dropdown-item" href="#" id="background1">nhúng</a>
-          <a class="dropdown-item" href="#" id="background1">tắt thông báo bài viết này</a>
-          <a class="dropdown-item" href="#" id="background1">hiển thị trong tab</a>
+            <a class="dropdown-item" href="#" id="background1">lưu bài viết</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" id="background1">chỉnh sữa bài</a>
+            <a class="dropdown-item" href="#" id="background1">nhúng</a>
+            <a class="dropdown-item" href="#" id="background1">tắt thông báo bài viết này</a>
+            <a class="dropdown-item" href="#" id="background1">hiển thị trong tab</a>
         </div>
         </div>
      </div>
+  </div>
+  <div class="card-body">
+    <div class="row" style=" margin-left:5px; padding-bottom: 5px; margin-top:-15px;">
+      <p>Hôm Này Tôi Nhớ Về Anh</p>
+    </div>
 
-     <hr>
-    
-     <div class="row" style="margin-top: 10px;">
-       <div class="col-12 col-sm-12">Hôm Nay tôi Bùn</div>
-     </div>
+    <div class="row" style=" margin-left:5px; padding-bottom: 5px; margin-top:-15px;">
+      <span>6/4/2020</span> <span>13:00</span>
+    </div>
 
-      <img class="card-img-top" src="img/em.jpg" alt="Card image" height="500px">
-     <hr>
-     <div class="row">
-           <div class="col-6 col-sm-6">like 12 </div>
-           <div class="col-6 col-sm-6"><a href="#" class="float-right" style="text-decoration: none;"> 1 bình luận</a></div>
-      </div>
-     <hr>
-     <div class="row">
+
+    <div class="row">
+     <img class="card-img-top" src="img/em.jpg" alt="Card image" width="100%" height="500px">
+    </div>
+
+     <div class="row" style="height:25px; margin-top:10px;">
           <div class="col-4 col-sm-4">
-            
-            <button type="submit" class="btn btn-light btn-block"><i class="far fa-thumbs-up"> Thích</i></button>
-           
+            <a href="" title="thich">
+            <button type="submit" class="btn btn-light btn-block">
+             
+              <i class="far fa-thumbs-up"> 1</i> 
+            </button>
+           </a>
           </div>
         <div class="col-4 col-sm-4">
-            <button type="submit" class="btn btn-light btn-block "><i class="far fa-comment-alt"> Bình Luận</i></button>
+            <button type="submit" class="btn btn-light btn-block "><i class="far fa-comment-alt"> 3</i></button>
         
         </div>
             <div class="col-4 col-sm-4">
                        
-                <button type="submit" class="btn btn-light btn-block"><i class="far fa-share-square"> Chia Sẻ</i></button>
+                <button type="submit" class="btn btn-light btn-block"><i class="far fa-share-square"> 6</i></button>
              
             </div>
         </div>
   </div>
-</div>
+</div> <!-- kết thúc -->
     
+
+
+
+
+
+<style type="text/css">
+  span{
+    font-size:12px;
+    color:#999999;
+    margin-right:10px;
+    margin-top:15px;
+  }
+</style>

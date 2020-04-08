@@ -9,7 +9,7 @@
 
 	 		 <span class="float-right" >
 		             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						 <i class="fas fa-cog" style="color: #3399CC"></i>
+						 <i class="fas fa-cog" style="color: black"></i>
 				     </a>
 				     <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align: center;">
 				         <a class="dropdown-item" href="#" id="background1">cài đặt</a>
@@ -30,7 +30,7 @@
  <div class="search-box">
 	 <div class="input-wrapper">
 	 	 <i class="fas fa-search"></i>
-	 	 <input type="text" name="" placeholder="search here">
+	 	 <input type="text" name="" placeholder="search here" style="outline: none;">
 	 </div>
  </div>  <!-- kết thức phần tìm kiếm  -->
 
