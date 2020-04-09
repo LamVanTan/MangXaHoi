@@ -11,7 +11,7 @@ class controllerLogin extends Controller
 {
     //
     public function getLogin(){
-    	return view('pages/Login');
+    	return view('NguoiDung/Login');
     }
 
     public function postLogin(Request $req){
