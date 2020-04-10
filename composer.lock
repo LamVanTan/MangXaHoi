@@ -58,7 +58,6 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.2"
-                
             },
             "type": "library",
             "extra": {
