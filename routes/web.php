@@ -15,47 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// trang chủ
-Route::get('home',['as'=>'trangchu',function(){
-
-	return view('pages.trangchu.content');
-}]);
-
-
-//mess
-Route::get('mess',['as'=>'mes',function(){
-
-	return view('pages.tinnhan.content');
-}]);
-
-//nhóm tạo nhóm
-Route::get('nhom',['as'=>'group',function(){
-
-	return view('pages.nhom.content');
-}]);
-
-//groupchat 
-Route::get('groupchat',['as'=>'nhomchat',function(){
-
-	return view('pages.groupchat.content');
-}]);
-
-Route::get('anhgroupchat',['as'=>'anh','uses'=>'MyController@geturl']);
-
-Route::get('ThanhVienGroup',['as'=>'thanhvien','uses'=>'MyController@geturl']);
-
-//kết thúc groupchat
-
-
-//trang cá nhân
-
-Route::get('trangcanhan',['as'=>'canhan',function(){
-
-	return view('pages.trangcanhan.content');
-}]);
- Route::get('anhcanhan',['as'=>'imgcanhan','uses'=>'MyController@geturl']);
-
-  Route::get('lylichcanhan',['as'=>'lylich','uses'=>'MyController@geturl']);
 
 
 
@@ -64,8 +23,32 @@ Route::get('trangcanhan',['as'=>'canhan',function(){
   Route::get('dangnhap','controllerLogin@getLogin');
   Route::post('dangnhap','controllerLogin@postLogin');
 
- // Route::post('dangnhap','controllerLogin@postdangki');
  
 
+Route::group(['prefix'=>'Home'],function() {
+    
+   
+    Route::group(['prefix'=>'TrangChu'],function(){
+        Route::get('content','TrangChuController@getHome');
+      
+     });
 
+    Route::group(['prefix'=>'TrangCaNhan'],function(){
+        Route::get('content','TrangCaNhanController@getHome');
+        Route::get('img','TrangCaNhanController@getIMG');
+        Route::get('thongtin','TrangCaNhanController@getThongTin');
+      
+     });
+
+    Route::group(['prefix'=>'TinNhan'],function(){
+        Route::get('content','TinNhanController@getHome');
+      
+     });
+
+    Route::group(['prefix'=>'Nhom'],function(){
+        Route::get('content','NhomController@getHome');
+      
+     });   
+
+}); 
 

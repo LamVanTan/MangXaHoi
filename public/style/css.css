@@ -23,9 +23,12 @@
 }
 
 /*ket thuc*/
+/*trang thái online*/
 .online , .online:hover{
   color: limegreen;
 }
+/*ket thuc*/
+
 
 
 .nav-item:hover{
@@ -35,18 +38,12 @@
 .carousel-inner img {
       width: 100%;
       height: 100%;
-  }
+}
 
 
-   .cuon1{
-        
-         overflow:auto;
-         
-        }
- #nen a:hover {
-     text-decoration: none;
-     font-size:20px;
- }
+.cuon1{
+  overflow:auto;
+}
 
  .link{
  	color: black;
@@ -55,25 +52,30 @@
 
   #background:hover{
  	background-color: lavender;
- 	color: #005fbf;
-  border-bottom: 5px solid lightseagreen;
+ 	color:#111111 ;
+  border-bottom: 5px solid  #111111;
  	}
 
  #background{
- 	color: #005fbf;
+ 	color:#111111;
  }
 
- #background1:hover{
- 	background-color: steelblue;
- 	}
+ 
 
- .div1{
-            height: 300px;
-            padding-top:200px;
-            padding-left: 10px;
-            font-size:30px;
-            color:black;
-            background-image:url(em.jpg);
+ .div1{     
+     display: inline-block;
+     width: 800px;
+     height: 300px;
+     padding-top:200px;
+     padding-left:10px;
+     font-size:30px;
+     color:black;
+     background:url("img/em.jpg") no-repeat left center;   
+     }
+
+   .div1 img{
+     position: relative;
+     left: 100px;
    }
 
 a{
@@ -108,7 +110,7 @@ i{
 }
 
  i:hover{
-    color:blue;
+    
     cursor: pointer;
   }
 
@@ -140,43 +142,44 @@ i{
   display: flex;
   vertical-align: baseline;
   background: white;
-  transition: .3s ease;
+  transition:1s ease;
 }
 
+#background1:hover{
+  background-color:#111111;
+  color: white;
+  }
 
 .friend-drawer1{
   padding: 10px 13px;
-  display: flex;
+  display:flex;
   vertical-align: baseline;
-  background: #eee;
-  transition: .3s ease;
-}
+  background:#eee;
+  }
 
   .text{
     margin-left: 12px;
     width: 70%;
-
+    padding-top:10px;
 }
-    h6{
-      margin-top: 6px;
-      margin-bottom: 0;
 
-    }
+h6{
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
 
-    p{
-      margin: 0;
-    }
-  
+p{
+   margin: 0;
+}
 
-  .time{
+.time{
     color: grey;
   }
 
  .friend-drawer:hover{
-    background-color: #3399CC;
-    cursor: pointer;
+    background-color:#333333;
+    cursor: pointer; /*định hình dạng con trỏ chuột khi dí vào thành phần nào đó*/
     color: white;
-
 }
   
 
@@ -186,13 +189,13 @@ i{
   margin: 10px 30px;
   border-radius: 9px;
   position: relative;
-  
 }
 
 
 .chat-bubble1{
   padding: 10px 14px;
-  background:#33CCFF;
+  background:#111111;
+  color: white;
   margin: 10px 30px;
   border-radius: 9px;
   position: relative; 
@@ -200,24 +203,23 @@ i{
 
 .chat-box-tray{
   background-color: #eee;
-  display: flex;
-  align-items: center;
-  padding: 10px 15px; 
+  display:flex;
+  align-items:center;
+  padding:10px 15px; 
 }
 
 
 .chat-box-tray i{
     color: gray;
-    
     vertical-align: middle;
   }
 
 .chat-box-tray input{
     margin: 0 10px;
     padding: 6px 2px;
-    border: none;
-    border-radius: 4px;
-      width: 80%;
+    border:none;
+    border-radius:15px;
+    width:80%;
   }
 
 .float-right i{
@@ -228,7 +230,7 @@ i{
 .chat-panel{
   background-color: white;
 }
-
+/*ket thuc mess*/
 
 /*phàn tạo ra cua sổ khi clik vào nít
 */.modal-header{

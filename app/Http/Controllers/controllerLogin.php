@@ -11,14 +11,14 @@ class controllerLogin extends Controller
 {
     //
     public function getLogin(){
-    	return view('pages/Login');
+    	return view('NguoiDung/Login');
     }
 
     public function postLogin(Request $req){
 
         $email=$req->email;
         $password=$req->pass;
-
+        
          if (Auth::attempt(array('Username' => $email, 'password' => $password)))
     {
          return view('pages/trangchu/content');
