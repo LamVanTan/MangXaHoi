@@ -49,6 +49,6 @@ Route::group(['prefix'=>'Home'],function() {
         Route::get('content','NhomController@getHome');
       
      });   
-
+  Route::get('index','NhomController@get');
 }); 
 
