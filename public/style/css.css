@@ -259,3 +259,12 @@ p{
     color:white;
 }
 /*kết Thúc*/
+
+
+/*ngày giờ*/
+.datetime span{
+    font-size:12px;
+    color:#999999;
+    margin-right:10px;
+    margin-top:15px;
+  }

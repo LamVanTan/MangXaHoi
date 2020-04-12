@@ -14,6 +14,10 @@ class controllerLogin extends Controller
     	return view('NguoiDung/Login');
     }
 
+    public function getdangki(){
+        return view('NguoiDung/dangki');
+    }
+
     public function postLogin(Request $req){
 
         $email=$req->email;

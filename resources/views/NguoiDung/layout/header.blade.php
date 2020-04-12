@@ -40,13 +40,22 @@
 	</nav>
 	  </div>
 
-		<div class="col-3 col-sm-3">
+		<div class="col-3 col-sm-3" id="menu">
 			<nav class="navbar navbar-expand-sm ">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="Home/TrangCaNhan/content" title="Trang Cá Nhân">
+						<a class="nav-link" href="" title="Trang Cá Nhân" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<img class="rounded-circle" src="img/tan.jpg" width="25px" height="25px" style="position: relative; top:3px;left:4px;">
 						</a>
+						<div class="dropdown-menu thongbao" aria-labelledby="navbarDropdown" style="width: 120px;">
+				             <a class="dropdown-item" href="Home/TrangCaNhan/content" id="background1">
+				                    Trang Cá Nhân
+				             </a>    
+				              <div class="dropdown-divider"></div>     
+				              <a class="dropdown-item" href="#" id="background1">
+				                   Đăng Xuất
+				             </a>              
+				        </div>
 					</li>
 					
 					
@@ -56,25 +65,29 @@
 				         	<div style="font-size: 20px;color: black;"><i class="fas fa-user-friends"></i>
 				        </div>
 				        </a> 
-				        <div class="dropdown-menu " aria-labelledby="navbarDropdown" >
-				             <div class="dropdown-item">
+				        <div class="dropdown-menu " aria-labelledby="navbarDropdown" style="width:350px;" >
+				             <div class="dropdown-item hover1" style="padding:0 5px;">
+				             	
 				             	<div class="row">
-				                   <div class="col-2 col-sm-2">	
-				                         <img src="img/tan.jpg" class="rounded-circle" width="30px" height="30px" >
+				                   <div class="col-2 col-sm-2">
+				                         <a href="" >	
+				                         <img src="img/tan.jpg" class="rounded-circle" width="30px" height="30px" style="margin-top: 2px;">
+				                         </a>
 				                     </div>
-				                     <div class="col-4 col-sm-4">
-				                         <a href="" style="color: black; position: relative;top:3px;"> Lâm Văn Tân</a>
+				                     <div class="col-6 col-sm-6 " style="margin-top: 5px;">
+				                         <a href="" style="color:black; margin-left: -20px;font-weight: bold;">Lâm Văn Nguyễn Thịnh </a>
 				                    
 				                    </div>
-				                    <div class="col-3 col-sm-3" style="margin-left:20px; margin-top:3px ">
-				                    	<button class="btn btn-dark btn-sm btn-block" style="padding:0 0">Duyệt</button>
+				                    <div class="col-2 col-sm-2" >
+				                    	<a href="" title="Chấp Nhận" class="req" style="margin-left:30px;margin-bottom: 5px; padding-right:5px;"><i class="fas fa-check"></i></a>
 				                    	
 				                    </div>
-				                    <div class="col-3 col-sm-3" style="margin-left: -20px; margin-top: 3px;">
-				                    	<button class="btn btn-sm btn-block" style="padding:0 0; background-color:#eee">Hủy</button>
+				                    <div class="col-2 col-sm-2">
+				                    	<a href="" title="Từ Chối" class="req" style="margin-bottom:5px; padding-right: 5px;"><i class="fas fa-times"></i></a>
 				                    	
 				                    </div>
 				                </div>
+				              
 				                    
 				             </div>    
 				              <div class="dropdown-divider"></div>  
@@ -108,17 +121,7 @@
 				                </div>
 				                    
 				             </a>    
-				              <div class="dropdown-divider"></div>  
-				              <a class="dropdown-item " href="#" id="background1">
-				                  <div style="font-size: 14px;">Văn Tân Và 5 người khác vừa thích bài của bạn</div>
-				                    
-				             </a>    
-				              <div class="dropdown-divider"></div>  
-				              <a class="dropdown-item " href="#" id="background1">
-				                  <div style="font-size: 14px;">Văn Tân Và 5 người khác vừa thích bài của bạn</div>
-				                    
-				             </a>    
-				              <div class="dropdown-divider"></div>            
+				              <div class="dropdown-divider"></div>                 
 				        </div>
 			      </li>
 			      
@@ -135,6 +138,7 @@
 </div>
 
 <style type="text/css">
+	/*thongbao*/
 	  .thongbao>a {
 	     word-wrap: break-word;
 	     white-space: normal;  
@@ -143,5 +147,22 @@
 	.thongbao{
 		width:350px;
 	}
-   
+
+	.thongbao a:hover{
+		color: white;
+	}
+	/*ket thuc*/
+
+    /*ket ban*/
+	.hover1:hover{
+        background-color: transparent;
+	}
+
+    .req{
+         color:black;
+    }
+    .req:hover{
+    	border-bottom: 2px solid black;
+    	color: black;
+    }
 </style>

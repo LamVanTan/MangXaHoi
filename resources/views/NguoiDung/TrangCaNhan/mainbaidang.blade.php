@@ -73,7 +73,7 @@
       <p>Hôm Này Tôi Nhớ Về Anh</p>
     </div>
 
-    <div class="row" style=" margin-left:5px; padding-bottom: 5px; margin-top:-15px;">
+    <div class="row datetime" style=" margin-left:5px; padding-bottom: 5px; margin-top:-15px;">
       <span>6/4/2020</span> <span>13:00</span>
     </div>
 
@@ -110,12 +110,3 @@
 
 
 
-
-<style type="text/css">
-  span{
-    font-size:12px;
-    color:#999999;
-    margin-right:10px;
-    margin-top:15px;
-  }
-</style>

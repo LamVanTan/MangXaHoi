@@ -16,16 +16,20 @@
               <div class="row ">
                  <div class="col-6 col-sm-6">
                     <li>
-                      <i class="fas fa-graduation-cap" style="float: left;"></i>
-                      <p style="float: right; width:90%">đã học tại trường trung học phổ thông hoàng diệu.</p>
+                      <i class="fas fa-graduation-cap" style="float: left;  position: relative;top:7px;"></i>
+                      <p style="float: right; width:90%">Trường THPT Hoàng Diệu.</p>
+                      <div style="clear: both;"></div>
                     </li>
+                    
                   </div>
 
                    <div class="col-6 col-sm-6" >
                     <li>
-                      <i class="fas fa-graduation-cap" style="float: left;"></i>
-                      <p style="float: right; width:90%">đã học tại trường trung học phổ thông hoàng diệu.</p>
+                      <i class="fas fa-map-marker-alt" style="float: left; position: relative;top:7px;"></i>
+                      <p style="float: right; width:90%"> Điện Tiến ,Điện Bàn , Quảng Nam</p>
+                      <div style="clear: both;"></div>
                     </li>
+                   
                   </div>
              </div>    
          </ul>
