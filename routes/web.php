@@ -22,11 +22,10 @@ Route::get('/', function () {
 
   Route::get('dangnhap','controllerLogin@getLogin');
   Route::post('dangnhap','controllerLogin@postLogin');
-  
-
   Route::get('dangki','controllerLogin@getdangki');
  
 
+// Nguoi Dùng
 Route::group(['prefix'=>'Home'],function() {
     
    
@@ -39,6 +38,7 @@ Route::group(['prefix'=>'Home'],function() {
         Route::get('content','TrangCaNhanController@getHome');
         Route::get('img','TrangCaNhanController@getIMG');
         Route::get('thongtin','TrangCaNhanController@getThongTin');
+        Route::get('BanBe','TrangCaNhanController@getBanBe');
       
      });
 
@@ -50,7 +50,12 @@ Route::group(['prefix'=>'Home'],function() {
     Route::group(['prefix'=>'Nhom'],function(){
         Route::get('content','NhomController@getHome');
       
-     });   
-  Route::get('index','NhomController@get');
+     }); 
+
+     Route::group(['prefix'=>'CaiDat'],function(){
+         Route::get('content','CaiDatController@getHome');
+         Route::get('baomat','CaiDatController@getBaoMat');
+     });  
+     
 }); 
 

@@ -1,120 +1,534 @@
-/*phan dau trang
-*/
-.search-header{
- border-radius:8px;
- border:1px solid black;
- padding: 0px 5px;
- position: relative;
- top:5px;
+
+.fa-pencil-alt, .fa-image, .fa-user-tag, .fa-grin-alt, .fa-caret-down, .fa-list-alt, .fa-user-friends, .fa-sms, .fa-bell, .fa-search, .fa-graduation-cap, .fa-map-marker-alt, .fa-user-alt, .fa-images{
+  color: black;
+  vertical-align: middle;
 }
 
-.input-header{
-  background:white;
-  border-radius: 40px;
-  
+ .fa-thumbs-up, .fa-comment, .fa-share{
+  color:#777777;
+  font-size: 15px;
  }
 
-  
- .input-header input{
-  border:0;
-  border-radius:20px;
-  width:300px;
-  outline:none;
-}
+/*phan dau trang*/
+  /*header*/
+    .fixed-top{
+       background-color:white !important;
+    }
+   /* phan logo va home*/
+    .fixed-top .col-sm-3 .navbar .navbar-nav .nav-item .nav-link .img-responsive{
+       position: relative !important; 
+       top:10px !important;
+       left:90px !important;
+    }
 
-/*ket thuc*/
-/*trang thái online*/
-.online , .online:hover{
-  color: limegreen;
-}
-/*ket thuc*/
-
-
-
-.nav-item:hover{
-  color: cornflowerblue;
-}
-
-.carousel-inner img {
-      width: 100%;
-      height: 100%;
-}
+    .fixed-top .col-sm-3 .navbar .navbar-nav .home{
+       position: relative !important; 
+       left:130px;
+       top:4px;
+    }
+    .fixed-top .col-sm-3 .navbar .navbar-nav .home .nav-link .fa-home{
+      font-size: 20px;
+      color: black;
+    }/*ket thuc*/
 
 
-.cuon1{
-  overflow:auto;
-}
 
- .link{
- 	color: black;
-  text-decoration: none;
- }
-
-  #background:hover{
- 	background-color: lavender;
- 	color:#111111 ;
-  border-bottom: 5px solid  #111111;
- 	}
-
- #background{
- 	color:#111111;
- }
-
- 
-
- .div1{     
-     display: inline-block;
-     width: 800px;
-     height: 300px;
-     padding-top:200px;
-     padding-left:10px;
-     font-size:30px;
-     color:black;
-     background:url("img/em.jpg") no-repeat left center;   
-     }
-
-   .div1 img{
+    /*phan tim kiem*/
+    .search-header{
+     border-radius:8px;
+     border:1px solid black;
+     padding: 0px 5px;
      position: relative;
-     left: 100px;
+     top:6px;
+    }
+    .input-header{
+      background:white;
+      border-radius:30px;
+     }
+     .input-header input{
+      border:0;
+      border-radius:20px;
+      width:330px;
+      outline:none;
+    }
+
+    .input-header form .fa-search{
+     font-size: 15px;
+     position: relative;
+     bottom:6px;
+    } /*ket thuc*/
+
+
+   /*phan menu va anh ca nhan*/
+   .fixed-top #menu .navbar .navbar-nav .profile .nav-link .rounded-circle{
+     position: relative;
+     width: 25px;
+     height: 25px;
+     top:10px;
+     left:3px;
+   }
+     .fixed-top #menu .navbar .navbar-nav .profile .dropdown-menu{
+      width: 120px;
    }
 
-a{
-  text-decoration: none;
-}
 
-/*
+  /*phan menu va thanh chua cac chuc nang them ban, thong bao ,tin nhan*/
+  /* them ban*/
+   .fixed-top #menu .navbar .navbar-nav .addfriend .nav-link{
+    position: relative;
+    top:2px;
+    left:7px;
+    font-size: 20px;
+    color: black;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu{
+      width:350px;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu  .dropdown-item{
+       padding: 0 5px;   
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item:hover{
+       background-color: transparent;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item div a img{
+       width:30px;
+       height: 30px;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item .col-sm-6{
+      margin-top: 5px;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item .col-sm-6 a{
+      color:black;
+      margin-left: -20px;
+      font-weight: bold;
+   }
+   .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item .accept a{
+     margin-left:30px;
+     margin-bottom: 5px;
+     padding-right:5px;
+   }
+  .req{
+       color:black;
+  }
+  .req:hover{
+    border-bottom: 2px solid black;
+    color: black;
+  }
+
+  .fixed-top #menu .navbar .navbar-nav .addfriend .dropdown-menu .dropdown-item .delete a{
+    margin-bottom:5px;
+    padding-right: 5px;
+   }/* ket thuc*/
+
+
+
+ /* phan tin nhan*/
+  .fixed-top #menu .navbar .navbar-nav .sms .nav-link{
+    position: relative;
+    top:2px;
+    left:10px;
+    font-size: 20px;
+    color: black;
+   }/*ket thuc*/
+
+
+  /*phan thong bao*/
+
+   .fixed-top #menu .navbar .navbar-nav .bell .nav-link{
+    position: relative;
+    top:2px;
+    left:12px;
+    font-size: 20px;
+    color: black;
+   }
+   .thongbao a {
+     word-wrap: break-word;
+     white-space: normal;  
+     font-size: 14px;
+  } 
+  .thongbao{
+    width:350px;
+  }
+  .thongbao a:hover{
+    color: white;
+  }/*ket thuc*/
+/*ket thuc phan header
+*/
+
+
+/*phan content*/
+   /*trang chu*/
+
+   /*danh sach bai dang*/
+  .fa-pencil-alt{
+     font-size:17px;
+     color:black;  
+     position: relative;
+     bottom: 5px;
+  }
+  
+  .btn-submit{
+    color: #BBBBBB; background-color:white;
+  }
+  .btn-submit:hover{
+    color: #BBBBBB; background-color:white;
+  }
+  .btn-submit img{
+    width: 50px;
+    height: 50px;
+  }
+  .linkprofile{
+    color: black;
+  }
+  .linkprofile:hover{
+   color: black;
+  }
+  .linkprofile img{
+    width:30px; height:30px;
+  }
+  .title-list{
+    padding-bottom: 5px; margin-top:-15px;
+  }
+  .title-list .col-sm-12 p{
+    word-wrap: break-word;
+    white-space: normal;  
+  }
+  .datetime-list .col-sm-12 {
+    padding-bottom: 5px;
+    margin-top:-10px;
+  }
+  .datetime-list .col-sm-12 p{
+    display: inline;
+    font-size:12px;
+    color:#999999;
+  }
+  .img-list img{
+    width:100%;
+  }
+  .btn-list{
+     height:25px;
+     margin-top:10px;
+  }
+   
+  /* ket thuc danh sach dang bai*/
+
+
+
+  /*pha ban be online*/
+  .list-friend .fa-list-alt{
+    font-size:17px;
+    display: inline;
+   }
+   .list-friend b{
+    position: relative;
+    top:3px;
+    font-size:17px;
+   }
+
+   .friend-online{
+     width: 320px;
+   }
+
+   .friend-online .listfriend{
+      padding: 5px 2px;
+      font-size: 12px;
+      height:30px;
+   }
+
+   .friend-online .listfriend .listfriend_item{
+    color: black;
+  }
+  
+  .friend-online .listfriend .listfriend_item:hover{
+    color: black;
+    text-decoration: none;
+  }
+  .friend-online .listfriend:hover{
+    background-color: #eee;
+    
+  }
+  .friend-online .listfriend span{
+    font-size: 15px;
+    margin-left: 5px;
+    vertical-align:middle;
+   }
+   .friend-online .listfriend .fa-circle{
+     font-size: 10px;
+   }
+   
+   .friend-online .listfriend .online{
+    position: relative;
+    bottom: 3px;
+   }
+  .online{
+    color: limegreen;
+  }
+  .online:hover{
+    color: limegreen;
+  }/* ket thuc phan ban be online*/
+  /*ket thuc trang chu*/
+
+
+
+ /* trang ca nhan*/
+  /*header*/
+  .cover-image{
+   width:100%;
+   height:400px;
+  }
+  .profile-menu .row .addfriend .row{
+    margin-bottom: 10px;
+  }
+  .profile-menu .row .addfriend .row .col-sm-10 a{
+    background-color:white; 
+    position: relative;
+    bottom:53px;
+    right: 15px;
+    padding:1px 0;
+    font-size: 14px;
+  }
+  .profile-menu .row .addfriend .row .col-sm-10 .fa-user-plus{
+    font-size: 15px;
+    position: relative;
+    bottom: 4px;
+    right: 2px;
+    color: black;
+
+  }
+
+  .profile-menu .row .addfriend .row .col-sm-10 a b{
+    position: relative;
+    top:5px;
+  }
+
+  .profile-menu .row .addfriend .row .col-sm-10 .dropdown-menu{
+    width:100px;
+  }
+
+  .profile-menu .row .addfriend .row .col-sm-10 .dropdown-menu a .fa-check, .fa-times{
+    color: black;
+    font-size: 13px;
+    position: relative;
+    bottom: 4px;
+  }
+
+  .profile-menu .row .addfriend .row .col-sm-10 .dropdown-menu a{
+    padding: 0 10px;
+    font-size: 12px;
+    width: 90px;
+    position: relative;
+    bottom:2px;
+    left:5px;
+
+  }
+
+  .profile-menu .row .addfriend .row .col-sm-10 .dropdown-menu a:hover{
+    text-decoration: underline;
+    width:90px;
+  }
+
+  .kb{
+    width:16.5%;
+    opacity: 0.7;
+  }
+  .ph{
+    width:16.5%;
+    opacity: 0.7;
+
+
+  }
+
+  .profile-menu .row .img-profile{
+    position: relative; bottom: 100px; padding-left:10%;
+  }
+
+  .profile-menu .row .img-profile img{
+     width:100px; height: 100px;
+  }
+
+  .profile-menu .row .img-profile b{
+    text-align: center;
+  }
+
+  .profile-menu .profile-address{
+     list-style: none;
+     padding-bottom:30px;
+     border-bottom:0.5px solid #DDDDDD;
+     position: relative;
+     bottom: 50px;
+  }
+
+  .profile-menu ul .row .col-sm-6 li i{
+    float: left;
+    position: relative;
+    bottom:7px;
+  }
+  .profile-menu ul .row .col-sm-6 li p{
+    float: right; width:90%
+
+  }
+  .profile-menu .menu-list{
+    margin-bottom:-30px;
+  }
+
+  .profile-menu .menu-list .col-sm-12{
+    padding-left:27%;
+    margin-top: -60px;
+  }/*ket thuc header*/
+
+
+  /*phan dang bai viet*/
+     /*danh sach bai dang*/
+  .fa-pencil-alt{
+     font-size:17px;
+     color:black;  
+  }
+  
+  .btn-submit{
+    color: #BBBBBB; background-color:white;
+  }
+  .btn-submit:hover{
+    color: #BBBBBB; background-color:white;
+  }
+ 
+  .btn-submit img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .linkprofile{
+    color: black;
+  }
+  .linkprofile:hover{
+   color: black;
+  }
+  
+  .linkprofile img{
+    width:30px; height:30px;
+  }
+
+  .title-list{
+    padding-bottom: 5px; margin-top:-15px;
+  }
+  
+  .title-list .col-sm-12 p{
+    word-wrap: break-word;
+    white-space: normal;  
+  }
+  
+  .datetime-list .col-sm-12 {
+    padding-bottom: 5px;
+    margin-top:-10px;
+  }
+
+  .datetime-list .col-sm-12 p{
+    display: inline;
+    font-size:12px;
+    color:#999999;
+  }
+
+  .img-list img{
+    width:100%;
+  }
+  
+  .btn-list{
+     height:25px; margin-top:10px;
+  }
+
+
+  
+  .btn-list .col-sm-4 a b{
+     position: relative; top: 3px;
+  }/* ket thuc phan dăng bài viết*/
+
+   /*phan ban bè*/
+   .profile-listfriend{
+    margin-top: 10px;
+  }
+  .profile-listfriend .card-header b{
+    font-size: 17px;
+    position: relative;
+    top: 8px;
+  }
+
+  .profile-listfriend .card-body .col-sm-6{
+    margin-bottom: 10px;border:0.5px solid #DDDDDD;padding:5px;
+  }
+
+  .profile-listfriend .card-body .col-sm-6 .row .col-sm-8 img{
+    width:40%;
+    height:100px;
+  }
+
+  .profile-listfriend .card-body .col-sm-6 .row .col-sm-8 a{
+    color: black;
+    padding-left: 5px;
+  }
+
+  .profile-listfriend .card-body .col-sm-6 .row .col-sm-4{
+    padding-top:8%;
+  }/*ket thuc phan danh sach ban bè*/
+
+
+  /*phần danh sách các ảnh*/
+  .profile-listimg{
+     margin-top: 10px;
+   }
+
+   .profile-listimg .card-header .row .col-sm-12 b{
+     font-size: 17px;
+   }
+
+   .profile-listimg .card-body .row .col-sm-3 img{
+     width:100%;
+     height:80%;
+   }
+   .profile-listimg .card-body .row .col-sm-3 span{
+     position: relative;
+     bottom:30px;
+     left: 3px;
+     color: white;
+   }
+   
+   .profile-listimg .card-body .row .col-sm-3 span b{
+     position: relative; top: 7px;
+   }
+   .profile-listimg .card-body .row .col-sm-3 span .fa-thumbs-up{
+     color: #eee;
+
+   }
+   /*kết thúc phần danh sách ảnh*/
+
+/*ket thuc trang ca nhan*/
+
+
+
+ /*Trang tin nhắn*/
+  /*
 phần mess*/
-
-    .container{    
-    padding: 0;
-    margin: 10px auto;
-    border-radius: 10px;
-    background-color: white;
-}
- 
+/*.container{    
+  padding: 0;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #eee;
+}*/
 .settings-tray{
-  background-color:white;
+  background-color:#eee;
   padding: 10px 15px;
-  border-radius: 7px;
-
+  border-radius: 1px;
 }
- 
 i{
   margin-top: 10px;
   font-size: 20px;
   color: grey;
   margin-left: 14px;
-  transition: .3s;
-
-  
+  transition: .3s; 
+  vertical-align: middle;
+  margin-left: 7px;
 }
-
  i:hover{
-    
     cursor: pointer;
   }
-
-
 .search-box{
  background-color: #eee;
  padding: 10px 13px;
@@ -122,13 +536,6 @@ i{
  .input-wrapper{
   background: white;
   border-radius: 40px;
- }
-
- i {
-  
-  vertical-align: middle;
-  margin-left: 7px;
-
  }
 
  .input-wrapper input{
@@ -142,22 +549,27 @@ i{
   display: flex;
   vertical-align: baseline;
   background: white;
-  transition:1s ease;
+  transition:0.5s ease;
 }
 
 #background1:hover{
   background-color:#111111;
   color: white;
-  }
+}
 
 .friend-drawer1{
   padding: 10px 13px;
   display:flex;
   vertical-align: baseline;
   background:#eee;
-  }
-
-  .text{
+}
+.friend-drawer1 img{
+  width:50px;
+  height: 50px;
+  border-radius: 40px;
+}
+ 
+.text {
     margin-left: 12px;
     width: 70%;
     padding-top:10px;
@@ -190,7 +602,6 @@ p{
   border-radius: 9px;
   position: relative;
 }
-
 
 .chat-bubble1{
   padding: 10px 14px;
@@ -230,7 +641,145 @@ p{
 .chat-panel{
   background-color: white;
 }
-/*ket thuc mess*/
+
+.mess-thanhcuon{
+  overflow-x: auto;
+  height:410px;
+}
+.chat-box-tray .fa-grin{
+  color: black;
+  margin-right: 10px;
+}
+
+.chat-box-tray form{
+  display:flex; width: 100%;
+}
+.chat-box-tray form input{
+  outline: none;
+}
+.chat-box-tray form button .fa-microphone{
+  color: black;
+}
+.chat-box-tray form button .fa-telegram-plane{
+  color: black;
+}/*ket thuc mess*/
+
+ /*kết thúc trang tin nhắn*/
+
+
+/*phần cài đặt*/
+ 
+ /*phần cài đặt chung*/
+ .setting .card-body .setting-bell{
+   border-top: 0.5px solid #CCCCCC;
+   margin-top:10px;
+   padding-bottom:5px;
+   padding-top:10px;
+ }
+  
+.switch {
+  top: 4px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+ 
+}
+ 
+.switch input {display:none;}
+ 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  right:16px;
+  bottom:2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+input:checked + .slider {
+  background-color: black;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius:30px;
+}
+ 
+.slider.round:before {
+  border-radius:50%;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}/*kết thúc phần cài đặt chung*/
+
+ /*bảo mật tài khoản*/
+ .card .card-body form{
+    width:100%;
+    padding: 0 20px;
+  }
+  .card .card-body form input{
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+    margin:25px 0;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0.5px solid gray;
+    outline: none;
+  }
+  .card .card-body form .submit{
+    display: inline;
+    width: 50%;
+    border:0.5px solid black;
+    color: white;
+    background-color:#333333;
+    border-radius: 8px;
+    font-size: 14px;
+    
+  }
+  .card .card-body form .reset{
+    display: inline;
+    width: 49%;
+    border:0.5px solid black;
+    color: black;
+    background-color:lightgray;
+    border-radius: 8px;
+    font-size: 14px;
+  }/*kết thúc*/
+/*kết thúc phần cài đặt*/
+/*ket thuc phan content*/
+
+
+  #background:hover{
+ 	background-color: lavender;
+ 	color:#111111 ;
+  border-bottom: 5px solid  #111111;
+ 	}
+
+ #background{
+ 	color:#111111;
+ }
+
 
 /*phàn tạo ra cua sổ khi clik vào nít
 */.modal-header{
@@ -259,12 +808,9 @@ p{
     color:white;
 }
 /*kết Thúc*/
+ /*i{
+  vertical-align: middle;
+  margin-left: 7px;
+  color: black;
 
-
-/*ngày giờ*/
-.datetime span{
-    font-size:12px;
-    color:#999999;
-    margin-right:10px;
-    margin-top:15px;
-  }
+ }*/

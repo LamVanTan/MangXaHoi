@@ -13,19 +13,36 @@
 		}
 		body{
 			margin:0;
-			padding:50px 500px;
-			background-image: linear-gradient(#476262,#f7ffe9,#f7ffe9,#f7ffe9);
+			padding:10px 0;
+			background-image: linear-gradient(#888888,white,#EEEEEE);
 		}
+		.sologan{
+			position: absolute;
+			width: 400px;
+		    left:17%;
+			padding: 5px;
+
+		}
+		.sologan h1{
+			text-align: center;
+			margin: 35px auto;
+			text-shadow: 5px 5px 5px #353331;
+
+		}
+		.sologan span{
+			position: relative;
+			left: 180px;
+		}
+
+      /*phân đăng nhập với đăng ký*/
 		.home_login{
 			position: relative;
-			margin-top:5%;
-			margin-bottom:5%;
-			margin-left:70%;
+			left:55%;
 			width: 380px;
 			height: 600px;
 			padding: 5px;
-			
 			overflow: hidden;
+			
 		}
 
 		 .btn_button{
@@ -34,6 +51,8 @@
             box-shadow:0 0 10px 0 #353331;
             border-radius: 20px;
             position: relative;
+            
+
           
 		}
 
@@ -43,9 +62,10 @@
         	left:0;
         	width:125px;
         	height:100%;
-        	background-color:#4a4f50;
+        	background-color:black;
         	border-radius: 20px;
         	transition: .3s;
+            
            
         }
 
@@ -58,6 +78,8 @@
 			position: relative;
 			border :none;
 		}
+
+
          
          .login_form{
         	position: absolute;
@@ -91,8 +113,9 @@
         	outline:none;
 
         }
+        /*nút đănh nhập với đăng kí*/
           .submit{
-         	background-color:#595142 ;
+         	background-color:#111111 ;
          	display: block;
          	width: 100%;
          	padding: 5px 0;
@@ -114,22 +137,27 @@
 			left:125px;
 
 		}
+
 		.error{
 			font-size: 14px;
-			color: #f3cd46;
+			color:red;
 
 		}
 		 
 	</style>
 </head>
 <body>
+     <div class="sologan">
+     	<h1>Chào Mừng Bạn Đến Với Chúng Tôi</h1>
+     	<span>LoGo</span>
+     </div>
 
 	 <div class="home_login">
-			  <div class="btn_button">
+			<div class="btn_button">
 				  	 <div class ="btn"></div>
 				  	 <button class="btn_sub">Đăng Nhập</button> 
 				  	 <button class="btn_sub">Đăng Ký</button> 
-			  </div>
+			</div>
 		  	<form action="" class="login_form" method="GET">
 		  		<input class="txt" type="text" name="user" placeholder="Email Hoặc SDT"/>
 		  		<input class="txt" type="password" name="password" placeholder="Mật Khẩu"/>
@@ -137,7 +165,7 @@
 		  	</form>
 
 		  	<form class="register_form">
-		  		<input class="txt" type="text" name="name" placeholder="Name"/>
+		  		<input class="txt" type="text" name="name" placeholder="Tên Đăng Nhập"/>
 		  		<input class="txt" type="text" name="user" placeholder="Email Hoặc SDT"/>
 		  		<input class="txt" type="password" name="pass" id="password" placeholder="Mật Khẩu"/>
 		  		<input class="txt" type="password" name="passreset" placeholder="Nhập Lại Mật Khẩu"/>
@@ -182,10 +210,10 @@
    	   	  },
    	   	  messages:{
               user:{
-              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống"
+              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập username"
               },
               password:{
-              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống"
+              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập mật khẩu"
               },
    	   	  },
 
@@ -225,31 +253,31 @@
    	   	  },
    	   	  messages:{
 	              name:{
-	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập tên",
 	              	minlength:"Tên Quá Ngắn, Phải Có Ít Nhất 3 Kí Tự",
 	              	maxlength:"Tên Không Được Quá 32 Kí Tự"
 	              },
 
 	              user:{
-	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập email",
 	              	email:"Sai Định Dạng Email"
 	              },
 	              pass:{
-	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	              	required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập mật khẩu",
 	              	minlength:"Mật Khẩu Quá Ngắn ,Phải Có Ít Nhất 6 Kí Tự"
 	              },
 	              passreset:{
-	                required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	                required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập lại mật khẩu",
 	              	equalTo:"Mật Khẩu Không Trùng Khớp"
 	              },
 	              sdt:{
-	                required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	                required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập sdt",
 	                number:"Sai Định Dạng SDT",
 	                maxlength:"SDT Quá Dài, SDT Bằng 10 Số",
 	                minlength:"SDT Không Đúng, Phải Có 10 Sô"
 	              },
 	              diachi:{
-	              	 required:"<span><i class='fas fa-exclamation-triangle'></i></span> Trường Này Không Được Để Trống",
+	              	 required:"<span><i class='fas fa-exclamation-triangle'></i></span> Vui lòng nhập địa chỉ",
 	              },
    	   	 }
 

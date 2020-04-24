@@ -20,4 +20,9 @@ class TrangCaNhanController extends Controller
      	$kq=$req->path();
     	return view('NguoiDung.TrangCaNhan.content',['kq'=>$kq]);
     }
+
+    public function getBanBe(Request $req){
+        $kq=$req->path();
+        return view('NguoiDung.TrangCaNhan.content',['kq'=>$kq]);
+    }
 }

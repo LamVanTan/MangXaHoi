@@ -1,10 +1,10 @@
             
 <!-- phần thông tin và chức năng sử dụng cá nhân -->
- <div class="settings-tray">
+ <div class="settings-tray" >
 	 <div class="friend-drawer1">
-	     <img  src="img/em.jpg" width="50" height="50" style="border-radius: 40px;">
+	         <img  src="img/em.jpg" width="50" height="50" style="border-radius: 40px;">
 	 		 <div class="text">
-	 			 <h6>Lâm Văn Tân</h6>
+	 			 <h6><a href="" style="color: black"> Lâm Văn Tân </a></h6>
 	 		 </div>
 
 	 		 <span class="float-right" >
