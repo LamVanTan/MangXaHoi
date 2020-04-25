@@ -824,3 +824,8 @@ input:checked + .slider:before {
   }
 
 
+  .card {
+    border: 0.5px solid #BBBBBB;
+  }
+
+

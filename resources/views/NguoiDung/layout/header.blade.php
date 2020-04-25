@@ -93,6 +93,30 @@
 				                    
 				             </div>    
 				              <div class="dropdown-divider"></div>  
+				              <div class="dropdown-item" >
+				             	<div class="row">
+				                   <div class="col-sm-2">
+				                         <a href="" >	
+				                         <img src="img/em.jpg" class="rounded-circle">
+				                         </a>
+				                     </div>
+				                     <div class="col-sm-6">
+				                         <a href="">Lâm Văn Nguyễn Thịnh </a>
+				                    
+				                    </div>
+				                    <div class="col-sm-2 accept">
+				                    	<a href="" title="Chấp Nhận" class="req"><i class="fas fa-check"></i></a>
+				                    	
+				                    </div>
+				                    <div class="col-sm-2 delete">
+				                    	<a href="" title="Từ Chối" class="req"><i class="fas fa-times"></i></a>
+				                    	
+				                    </div>
+				                </div>
+				              
+				                    
+				             </div>    
+				              <div class="dropdown-divider"></div>  
 				                
 				        </div>
 
@@ -123,6 +147,18 @@
 				                </div>
 				                    
 				             </a>    
+				              <div class="dropdown-divider"></div>        
+				              <a class="dropdown-item" href="#" id="background1">
+				             	<div class="row">
+				             		<div class="col-sm-2">
+				                         <img src="img/em.jpg" class="rounded-circle" width="40px" height="40px">
+				                    </div>
+				                    <div class="col-sm-10">
+				                         <p> Văn Tân Và 5 người khác vừa thích bài của bạn Văn Tân Và 5 người</p>
+				                    </div>
+				                </div>
+				                    
+				             </a>    
 				              <div class="dropdown-divider"></div>                 
 				        </div>
 			      </li>
@@ -138,4 +174,13 @@
 	</div>
 
 </div>
+
+<style type="text/css" media="screen">
+   .fa-check{
+   	color: black;
+   	font-size: 12px;
+   	position: relative;bottom: 3px;
+   }
+	
+</style>
 

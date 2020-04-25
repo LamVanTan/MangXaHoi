@@ -26,7 +26,7 @@
 		.sologan h1{
 			text-align: center;
 			margin: 35px auto;
-			text-shadow: 5px 5px 5px #353331;
+			text-shadow: 5px 5px 5px gray;
 
 		}
 		.sologan span{
