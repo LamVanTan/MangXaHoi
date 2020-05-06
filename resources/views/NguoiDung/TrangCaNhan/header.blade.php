@@ -35,7 +35,7 @@
 
                     <div class="row mess-follow">
                      
-                      <div class="col-sm-2">
+                      <div class="col-sm-2 sms">
                          <a class="nav-link btn btn-sm" href="">
                               <i class="fas fa-sms"></i>
                           </a>
@@ -124,23 +124,29 @@
 </div>
 
 <style type="text/css">
+  #background{
+ 
+  padding:.10rem 1rem !important;
+ }
   .icon{
     color: black;
     font-size: 16px;
   }
   .mess-follow{
-    position: relative; bottom:125px;
+    position: relative;
+    bottom:125px;
 
   }
-
-  .mess-follow .col-sm-2 a{
+/* sms */
+  .mess-follow .sms a{
     background-color: white;
     position: relative;
     right:15px;
-    bottom: 2px;
+    bottom: 0px;
     padding-top: 0;
     padding-bottom: 0;
     opacity: 0.7;
+    padding-right: 17px;
 
   }
 
@@ -148,45 +154,51 @@
     position: relative;
     right:16px;
     bottom: 4px;
-  }
+    font-size: 18px;
+  }/* ket thuc */
 
-  .mess-follow .follow a{
+
+/* follow*/
+   .mess-follow .follow a{
     background-color: white;
     position: relative;
-    right:62px;
-    bottom:37px;
+    right:63px;
+    bottom:35px;
     padding-top: 0;
     padding-bottom: 0;
     opacity: 0.7;
+    padding-right: 17px;
 
   }
 
-  .mess-follow .drop a{
-    background-color: white;
-    position: relative;
-    right:110px;
-    bottom:72px;
-    padding-top: 0;
-    padding-bottom: 0;
-    opacity: 0.7;
-    
-  }
-
-  .mess-follow .col-sm-2 a .fa-rss{
+  .mess-follow .follow a .fa-rss{
     position: relative;
     right:16px;
     bottom: 4px;
     color: black;
     z-index: 1;
+    font-size: 20px;
     
+  }/* ket thuc */
+
+  /* drop */
+  .mess-follow .drop a{
+    background-color: white;
+    position: relative;
+    right:112px;
+    bottom:70px;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0.7;
+    padding-right: 17px;
   }
 
-  .mess-follow .col-sm-2 a .fa-caret-down{
+  .mess-follow .drop a .fa-caret-down{
     position: relative;
     right:13px;
     bottom: 4px;
     color: black;
-  }
+  }/* ket thúc */
   
   .fa-user-check{
     font-size: 15px;
@@ -195,14 +207,7 @@
     right: 2px;
     color: black;
   }
-
+  
 </style>
 
   
-@section('script')
-   <script type="text/javascript">
-     $(document).ready(function(){
-
-     });
-   </script>
-@endsection

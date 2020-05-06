@@ -38,7 +38,7 @@
         </div>
      </div>
      <div class="card-footer bg-light">
-         <a href="" title="" style="text-decoration: none;color:#BBBBBB;">Copyright &copy; BTT 2020</a>
+         <a href="" title="" style="text-decoration: none;color:#AAAAAA; font-size: 14px;">Copyright &copy; BTT 2020</a>
      </div>
    </div>
    </div>

@@ -56,6 +56,11 @@ Route::group(['prefix'=>'Home'],function() {
          Route::get('content','CaiDatController@getHome');
          Route::get('baomat','CaiDatController@getBaoMat');
      });  
+
+      Route::group(['prefix'=>'TimKiem'],function(){
+         Route::get('content','TimKiemController@getHome');
+         
+     });  
      
 }); 
 
