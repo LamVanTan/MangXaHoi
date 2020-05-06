@@ -110,8 +110,135 @@
                </a> 
             </div>
         </div>
+
+        <hr>
+        <div class="row" style="margin-right: 0px; margin-left: 0px !important;">
+          <div class="comment" >
+             <img src="img/tan.jpg" alt="" class="rounded-circle ">
+             <div class="content-des">
+                <span>
+                  <a href="">Lam Van Tan</a> 
+                Xinh đó. :)) Xinh đó. :)) Xinh đó. :)) Xinh đó. :))Xinh đó. :)) Xinh đó. :))
+                inh đó. :)) Xinh đó. :)) Xinh đó. :)) Xinh đó. :))Xinh đó. :)) Xinh đó. :))
+              </span><br>
+                <a href="" class="edit-del-cmt">Chỉnh sửa</a> <a href="" class="edit-del-cmt">Xóa</a>
+             </div>
+             <div class="clearfix"></div>
+          </div>
+           <div class="comment">
+             <img src="img/em.jpg" alt="" class="rounded-circle ">
+             <div class="content-des">
+                <span>
+                  <a href="">Binh Lam</a> 
+                Xinh đó. :)) Xinh đó. :)) Xinh đó. :)) Xinh đó. :))Xinh đó. :)) Xinh đó. :))
+                inh đó. :)) Xinh đó. :)) Xinh đó. :)) Xinh đó. :))Xinh đó. :)) Xinh đó. :))
+              </span><br>
+                <a href="" class="edit-del-cmt">Chỉnh sửa</a> <a href="" class="edit-del-cmt">Xóa</a>
+             </div>
+             <div class="clearfix"></div>
+          </div>
+           <a href="" title="" class="xemthem">Xem thêm</a>
+          </div>
+
+        
+           <form action="/action_page.php">
+              
+                <img src="img/tan.jpg" alt="admin" width="7%" class="rounded-circle img-comment">
+
+                <textarea name="" id="text_comment" rows="1" placeholder="Viết bình luận..."></textarea>
+             
+            </form>
   </div>
 </div> <!-- kết thúc -->
     
 
 
+<style type="text/css" media="screen">
+  .card .card-body form{
+    padding: 0 0 !important;
+    margin-top: 10px;
+
+  }
+  .card .card-body form {
+    
+     margin-bottom: -5px;
+  }
+   .card .card-body form img{
+     position: relative;
+     bottom: 10px;
+     height: 35px;
+
+   }
+   .card .card-body form #text_comment { 
+    margin: 0px ;
+    outline: none !important;
+    border: 1px solid lightgray;
+    border-radius:30px;
+    width: 92%;
+    display: inline;
+    background-color: #F8F8FF;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+     border: 1px solid #AAAAAA;
+}
+.card .card-body form #text_comment:focus{ 
+   padding:0px 10px 50px 10px;
+   border: 1px solid #AAAAAA;
+}
+
+.card .card-body .comment{
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 0 !important;
+ 
+}
+
+.card .card-body .comment img{
+  display:inline !important;
+  width: 7%;
+  height: 35px;
+  float: left;
+}
+
+
+
+.card .card-body .comment .content-des{
+  display:inline !important;
+  background-color:transparent;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  width: 92%;
+  float: right;
+}
+
+.card .card-body .comment .content-des span a{
+   color: black;
+   font-weight: bold;
+}
+
+.card .card-body .comment .content-des .edit-del-cmt{
+   color:gray;
+   font-size: 12px;
+   margin-right: 20px;
+}
+
+
+.card .card-body {
+    padding-bottom: 5px !important;
+    padding: 1rem;
+}
+
+.xemthem{
+  margin-left: 2px;
+  color: black;
+}
+
+.xemthem:hover{
+  margin-left: 2px;
+  color: black;
+}
+
+
+</style>
