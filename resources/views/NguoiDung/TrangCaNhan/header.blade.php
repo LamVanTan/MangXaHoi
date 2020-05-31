@@ -125,7 +125,6 @@
 
 <style type="text/css">
   #background{
- 
   padding:.10rem 1rem !important;
  }
   .icon{

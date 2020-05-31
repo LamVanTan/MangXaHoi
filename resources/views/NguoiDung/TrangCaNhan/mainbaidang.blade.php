@@ -20,9 +20,14 @@
                            <b class="modal-title">Tạo Bài Viết Mới</b>
                            <button type="button" class="close" data-dismiss="modal">&times;</button>
                        </div>
+                       <form action="/action_page.php">
                        <div class="modal-body">
-                         <form action="/action_page.php">
-                             <input type="text" name="" placeholder="Cho tôi biết suy nghĩ của bạn?">
+                         
+                          <div class="camxucpost" style="display:none">
+                           <input type="text" name="" id="emotion" disabled="" ><i class="fas fa-times emotionclose"></i>
+                           </div>
+                         
+                           <textarea name=""  rows="1" placeholder="Cho tôi biết suy nghĩ của bạn?"></textarea>
                                  <div class="row" >
                                      <div class="col-sm-4">
                                         <button type="button" class="btn btn-light btn-sm btn-block">
@@ -33,21 +38,42 @@
                                          <i class="fas fa-user-tag"></i><br>Gắn Thẻ</button>
                                      </div>
                                      <div class="col-sm-4">
-                                         <button type="button" class="btn btn-light btn-sm btn-block">
+                                         <button type="button" class="btn btn-light btn-sm btn-block camxuc" >
                                          <i class="fas fa-grin-alt"></i><br>Cảm Xúc</button>
                                      </div>
                                  </div>
-                         </form>
+                         
                        </div>
                    <div class="modal-footer">
-                       <button type="button" class="btn btn-dark btn-block bg-dark">Đăng Bài</button>
+                       <button type="button" class="btn btn-dark btn-block bg-dark ">Đăng Bài</button>
                    </div>
+                   </form>
               </div>
            </div>
          </div><!-- ket thúc cua sổ -->      
     </div> 
   </div><!-- kết thúc -->
-  
+  <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">      
+              <!-- Modal content-->
+              <div class="modal-content modal_camxuc">
+                <div class="modal-header">
+                  <div class="modal-title">Cảm Xúc</div>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-action">Đang Cảm Thấy Hạnh Phúc</li>
+                    <li class="list-group-item list-group-item-action">Đang Cảm Thấy Buồn</li>
+                    <li class="list-group-item list-group-item-action">Đang Cảm Thấy Vui</li>
+                    <li class="list-group-item list-group-item-action">Đang Cảm Thấy Hoảng Sợ</li>
+                    <li class="list-group-item list-group-item-action">Đang Cảm Thấy Giận Dữ</li>
+                  </ul>
+                </div>
+                
+              </div>
+            </div>
+          </div>
 <!-- phần hiển thị bài dăng -->
 <div class="card" style="margin-top: 10px;">
   <div class="card-header">
@@ -61,16 +87,37 @@
           <i class="fas fa-caret-down"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#" id="background1">Chỉnh sửa bài</a>
-            <a class="dropdown-item" href="#" id="background1">Tắt thông báo</a>
-            <a class="dropdown-item" href="#" id="background1">Xóa </a> 
+            <a class="dropdown-item editposts" id="background1">Chỉnh sửa bài</a>
+            <a class="dropdown-item"  id="background1">Tắt thông báo</a>
+            <a class="dropdown-item"  id="background1">Xóa </a> 
         </div>
        <!--  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#" id="background1">Ẩn</a>
             <a class="dropdown-item" href="#" id="background1">Tắt thông báo</a>
            
         </div> -->
-
+          <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">      
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <b class="modal-title">Sửa bài viết</b>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form action="/action_page.php">
+                      <input type="text" name="" placeholder="Hom nay tôi" style="outline: none; ">
+                      <div class="">
+                          <i class="fas fa-times" id="closeimg"></i>
+                          <img src="img/tan.jpg" alt="" class="img-fluid rounded" style="margin-bottom: 10px;">
+                      </div>
+                      <button type="button" class="btn btn-dark btn-block bg-dark">Cập Nhập Bài Viết</button>    
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
      </div>
   </div>
@@ -153,92 +200,103 @@
     
 
 
-<style type="text/css" media="screen">
-  .card .card-body form{
-    padding: 0 0 !important;
-    margin-top: 10px;
-
-  }
-  .card .card-body form {
-    
-     margin-bottom: -5px;
-  }
-   .card .card-body form img{
-     position: relative;
-     bottom: 10px;
-     height: 35px;
-
-   }
-   .card .card-body form #text_comment { 
-    margin: 0px ;
-    outline: none !important;
-    border: 1px solid lightgray;
-    border-radius:30px;
-    width: 92%;
-    display: inline;
-    background-color: #F8F8FF;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: black;
-     border: 1px solid #AAAAAA;
-}
-.card .card-body form #text_comment:focus{ 
-   padding:0px 10px 50px 10px;
-   border: 1px solid #AAAAAA;
+<style type="text/css">
+  /*phàn tạo ra cua sổ khi clik vào nít
+*/.modal-header{
+  background-color: #eee;
 }
 
-.card .card-body .comment{
-  margin-bottom: 5px;
+
+.modal-body textarea{
   width: 100%;
-  padding: 0 !important;
+  border-radius: 10px;
+  border: none;
+  background-color: #eee;
+  margin: 10px 0;
+  border-bottom: 0.5px solid #666666;
+  padding-left: 15px;
+}
+
+.modal-body textarea:focus {
+  height: 100px;
  
 }
-
-.card .card-body .comment img{
-  display:inline !important;
-  width: 7%;
-  height: 35px;
-  float: left;
+.modal_camxuc{
+    margin-top: 310px;
+    margin-left: 8px;
 }
 
+.modal-body .camxucpost{
+  padding-bottom: -10px !important;
+
+}
+
+.modal-body .camxucpost #emotion{
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  display: inline;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: transparent;
+  color: #BBBBBB;
 
 
-.card .card-body .comment .content-des{
-  display:inline !important;
-  background-color:transparent;
-  padding: 5px 10px;
-  border-radius: 30px;
-  font-size: 15px;
-  width: 92%;
+}
+
+.modal-body .camxucpost #emotion:focus{
+  height: 34px;
+}
+
+.modal-body .emotionclose{
+ position: relative;
   float: right;
+  bottom: 33px;
+  right: 5px;
 }
 
-.card .card-body .comment .content-des span a{
-   color: black;
-   font-weight: bold;
+#closeimg{
+  position: relative;
+  float: right;
+  top: 25px;
+  right: 10px;
+  background-color: white;
+  padding-left:3px;
+  padding-right: 2px;padding-bottom: 2px;padding-top: 2px;
+  border: 1px solid gray;
 }
-
-.card .card-body .comment .content-des .edit-del-cmt{
-   color:gray;
-   font-size: 12px;
-   margin-right: 20px;
-}
-
-
-.card .card-body {
-    padding-bottom: 5px !important;
-    padding: 1rem;
-}
-
-.xemthem{
-  margin-left: 2px;
-  color: black;
-}
-
-.xemthem:hover{
-  margin-left: 2px;
-  color: black;
-}
-
 
 </style>
+
+<script>
+
+$(document).ready(function(){
+  $(".dropdown-menu .editposts").click(function(){
+    $("#myModal1").modal({show: true});
+  });
+
+   $(".camxuc").click(function(){
+    $("#myModal2").modal({show: true});
+  });
+
+
+
+  $("ul li").click(function() {
+    var bien= $(this).text();
+    $("form #emotion").val(bien);
+    $("form .camxucpost").show();
+  });
+
+  $(".emotionclose").click(function() {    
+    $("form #emotion").val("");
+    $("form .camxucpost").hide();
+  });
+  
+  $("#closeimg").click(function() {    
+    $("form #emotion").val("");
+    $("form div").hide();
+  });
+ 
+
+});
+</script>

@@ -10,37 +10,45 @@
   	<div class="row">
        <div class="col-sm-3">
           <img src="img/tan.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/tan.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/tan.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/em.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
     </div>
     <div class="row">
        <div class="col-sm-3">
           <img src="img/tan.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/em.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/tan.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
        <div class="col-sm-3">
           <img src="img/em.jpg" class="rounded">
-          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span>
+          <div class="backgroud-img-bottom">
+          <span><i class="fas fa-thumbs-up"></i> <b>1</b></span></div>
        </div> 
     </div>
     
